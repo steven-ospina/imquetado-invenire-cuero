@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inicio{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: #6D7578;
+    border: 1px solid black;
+    background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: left -10px; 
+    height: 200px;
+}
+
+.pie_de_pagina{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: #6D7578;
+    border: 1px solid black;
+    height: 115px;
+    background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    background-position: left auto;
+    font-size: 40px;
+    text-decoration: underline overline;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Verdana, sans-serif; 
+}
