@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*-- inicio de la pagina: es esta parte odemos editar el header de la pagina--*/
 .inicio{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -15,7 +15,7 @@
     background-position: left -10px; 
     height: 200px;
 }
-
+/*--fin de pagina: en esta parte podemos editar el footer de la pagina--*/
 .pie_de_pagina{
     display: grid;
     grid-template-columns: repeat(1,1fr);
