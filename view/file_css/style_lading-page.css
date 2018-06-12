@@ -8,19 +8,18 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     background-color: #6D7578;
-    border: 1px solid black;
     background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
     background-repeat: no-repeat;
     background-size: 320px auto;
     background-position: left -10px; 
     height: 200px;
+    /* border: 1px solid black; */
 }
 /*--fin de pagina: en esta parte podemos editar el footer de la pagina--*/
 .pie_de_pagina{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     background-color: #6D7578;
-    border: 1px solid black;
     height: 115px;
     background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
     background-repeat: no-repeat;
@@ -31,4 +30,5 @@
     text-align: center;
     padding-top: 30px;
     font-family: Verdana, sans-serif; 
+    /* border: 1px solid black; */
 }
