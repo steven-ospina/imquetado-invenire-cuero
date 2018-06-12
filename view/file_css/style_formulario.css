@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*--inicio de la pagina con el logo--*/
+.inicio{
+    width: 100%;
+    height: 230px;
+    background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: center ; 
+    /*background-color: #775757a8;*/
+}
+/*--editor del titulo--*/
+.formulario h2{
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+/*--donde esta ubicado el formulario--*/
+.formulario{
+    max-width: 300px;
+    width: 100%;
+    height: 550px;
+    margin: 48px auto;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    border: 2px solid black;
+    background:silver;
+    padding: 40px 80px ;
+    font-size: 10px;
+    text-align: initial;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.formulario input{
+    width: 100%;
+    height: 30px;
+    font-size:18px; 
+    letter-spacing: 2px;
+    font-family: arial;
+}
+/*--editor de medidas de cajones de los campos--*/
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="email"],
+.formulario input[list="browsers"],
+.formulario input[list="browsers2"]{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/*--donde esta ubicado el pie de pagina--*/
+.pie_de_pagina{
+    width: 100%;
+    height: 85px;
+    background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+    background-repeat: no-repeat;
+    background-size: 220px auto;
+    background-position: left auto;
+    background-color: #775757a8;
+    font-size: 40px;
+    text-decoration: underline overline;
+    text-align: center;
+    padding-top: 40px;
+    font-family: Verdana, sans-serif; 
+}
+
+.browsers, .browsers2{
+    font-weight: bolder;
+}
+
+

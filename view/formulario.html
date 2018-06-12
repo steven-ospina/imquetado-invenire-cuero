@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file_css/style_formulario.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+  <header class="inicio">
+
+  </header>
+    <div class="formulario">
+        <h2>FORMULARIO REGISTRO DE USUARIOS </h2>
+            <form class="datos_formulario"  id="contact" action="#" method="POST" onsubmit="return validar()">
+
+                <input placeholder="Nombre" type="text" id="nombre"  tabindex="1" autofocus >
+                <div id="alertn">
+                    <span id="mensan"></span>
+                </div>
+                <input placeholder="Apellidos" type="text" id="apellidos"  tabindex="2" required />
+                <div id="alerta">
+                    <span id="mensaa"></span>
+                </div>
+                <input id="documento" placeholder="Documento" type="text"  minlength="9" maxlength="11" tabindex="3" required tabindex="3" />
+                <div id="alertd">
+                    <span id="mensad"></span>
+                </div>
+                <input list="browsers" placeholder="Género" class="browsers" tabindex="4">
+
+                <datalist id="browsers">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro" >Otro</option>
+                </datalist>  
+                <div id="alertg">
+                    <span id="mensag"></span>
+                </div>
+               <input id="email" placeholder=" Email " type="email" name="email" tabindex="5" required>
+               <div id="alerte">
+                <span id="mensae"></span>
+            </div>
+               <input list="browsers2" placeholder="Cargo" class="browsers2" tabindex="6">
+
+                <datalist id="browsers2">
+                  <option value="INSTRUCTOR">INSTRUCTOR</option>
+                  <option value="ADMINISTRADOR" >ADMINISTRADOR</option>
+                  <option value="JEFE DE BODEGA">JEFE DE BODEGA</option>
+                  <option value="AXILIAR DE BODEGA" selected >AXILIAR DE BODEGA</option>
+                </datalist>
+                <div id="alertc">
+                    <span id="mensac"></span>
+                </div>
+                <input placeholder=" Contraseña" type="password" id="contrasena"  minlength="8" tabindex="7" required />
+                <div id="alertp">
+                    <span id="mensap"></span>
+                </div>
+                <input placeholder="Repetir Contraseña" type="password" id="repecontrasena"  minlength="8" tabindex="8" required />
+                <div id="alertpp">
+                    <span id="mensapp"></span>
+                </div>
+                <p><input type="submit" value="Guardar información"></p>
+            </form>
+       </div>
+      <footer class="pie_de_pagina">
+            <b class="pies">2018-INVENIRE-CUERO</b>
+    </footer>
+    <script src="file_js/jquery-3.1.1.min.js"></script>
+    <script src="file_js/formulario.js"></script>
+</body>
+</html>
