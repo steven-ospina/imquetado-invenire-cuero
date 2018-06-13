@@ -6,9 +6,9 @@
     padding: 0px;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: verdana;
-    box-sizing: border-box;/* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */   
+    /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */   
 }
 /*=====================================================
     PANTALLA DE ESCRITORIO GRANDE-LARGE (lg)
