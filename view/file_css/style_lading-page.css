@@ -86,15 +86,60 @@
 /*========================================================================================*/
 /*==inicio de la pagina: es esta parte odemos editar el header de la pagina==*/
 /*========================================================================================*/
-.inicio{
+.header{
     width:100%;
-    height: 120px;
+    /* height: 120px; */
     background-color:#88ABC2;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
     /* background-image: url("../file_img/caja-invenire-cuero.png");
     background-repeat: no-repeat;
     background-size: 160px auto;
     background-position: left 5px;  */
     /* border: 1px solid black; */
+}
+/*========================================================================================*/
+/*==para centra texto en el archivo==*/
+/*========================================================================================*/
+.wrapper{
+    width: 100%;
+    max-width:1200px;
+    margin: auto;
+    overflow: hidden;
+}
+/*========================================================================================*/
+/*==editor del logo==*/
+/*========================================================================================*/
+header .logo{
+    color: white;
+    font-size: 40px;
+    line-height: 160px;
+    float: left;
+}
+/*========================================================================================*/
+/*==editor el menu==*/
+/*========================================================================================*/
+header nav{
+    float: right;
+    line-height: 160px;
+}
+
+header nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+header nav a:hover{
+    background: white;
+    color: black;
+    border-radius: 50px;
 }
 /*========================================================================================*/
 /*==fin de pagina: en esta parte podemos editar el footer de la pagina==*/
