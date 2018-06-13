@@ -25,10 +25,12 @@
     background-size: 150px auto;
     background-position: left 20px;
     font-size: 40px;
-    text-decoration: underline overline;
+    /* text-decoration: underline overline; */
     text-align: center;
     padding-top: 30px;
     font-family: Verdana, sans-serif; 
+    text-shadow: 3px 3px black;
+    color: white;
     /* border: 1px solid black; */
 }
 /* --en este lugar es para editar el lading page de la pagina-- */
