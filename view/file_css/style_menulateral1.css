@@ -99,11 +99,14 @@ h1{
   background-repeat: no-repeat;
   background-size: 200px auto;
   background-position: left auto;
-  background-color: #808080;
+  background-color: #88ABC2;
   font-size: 40px;
-  text-decoration: underline overline;
+  /* text-decoration: underline overline; */
   text-align: center;
-  font-family: Verdana, sans-serif; 
+  font-family: Verdana, sans-serif;
+  text-shadow: -4px 4px black;
+  color: white;
+  overflow:hidden;  
 }
 @media (max-width: 825px){
 	.boton{

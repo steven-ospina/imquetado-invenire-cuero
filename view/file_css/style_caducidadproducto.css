@@ -5,7 +5,7 @@
 .contenedor{
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
-	grid-template-rows: 200px 500px 100px 80px;
+	grid-template-rows: 200px 500px 100px;
 }
 
 .logo{
@@ -52,12 +52,12 @@
 	grid-column: 2 / span 9;
 	grid-row: 2;
 	display: block;
-	background: #DCDCDC;
+	background:  #DCDCDC;
 	margin: 5px;
 }
 .cuadros{
 	display: grid;
-	grid-template-columns:repeat(5,1fr);
+	grid-template-columns:repeat(4,1fr);
 	grid-template-rows: repeat(2,100px);
 	grid-gap: 3px;
 	margin-top: 30px;
@@ -101,15 +101,18 @@ h1{
   background-repeat: no-repeat;
   background-size: 200px auto;
   background-position: left auto;
-  background-color: #808080;
+  background-color:  #88ABC2;
   font-size: 40px;
-  text-decoration: underline overline;
+  /* text-decoration: underline overline; */
   text-align: center;
-  font-family: Verdana, sans-serif; 
+  font-family: Verdana, sans-serif;
+  text-shadow: -4px 4px black;
+  color: white;
+  overflow:hidden; 
 }
-@media (max-width: 830px){
+@media (max-width: 822px){
 	.cuadro{
-		height: 670px;
+		height: 590px;
 	}
 }
 @media (max-width: 826px){
@@ -148,6 +151,6 @@ h1{
 }
 @media (max-width: 822px){
 	.pie_de_pagina{
-		grid-row: 40;
+		grid-row: 10;
 	}
 }
