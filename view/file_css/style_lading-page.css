@@ -97,6 +97,7 @@
     background-size: 160px auto;
     background-position: left 5px;  */
     /* border: 1px solid black; */
+    font-family: Verdana, sans-serif; 
 }
 /*========================================================================================*/
 /*==para centra texto en el archivo==*/
@@ -191,7 +192,9 @@ header nav a:hover{
     background-color: #88ABC2;
     background-image: url("../file_img/inventario.jpg");
     background-size:cover;
-    height: 600px;
+    /* height: 700px; */
+    max-width: 100%;
+    height: auto;
 }
 /*========================================================================================*/
 /*==para editar todo lo que tenga que ver con al infomacion==*/
@@ -202,6 +205,7 @@ header nav a:hover{
     justify-content: center;
     height: 600px;
     background: rgba(169,171,173, .5);
+    font-family: Verdana, sans-serif; 
   }
 
 .contenido p{
