@@ -108,6 +108,14 @@
     margin: auto;
     overflow: hidden;
 }
+
+.wrapper-2{
+    width: 100%;
+    max-width:1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
 /*========================================================================================*/
 /*==editor del logo==*/
 /*========================================================================================*/
@@ -200,6 +208,7 @@ header nav a:hover{
 /*==para editar todo lo que tenga que ver con al infomacion==*/
 /*========================================================================================*/
 .contenido{
+
     display: flex;
     align-items: center;
     justify-content: center;
