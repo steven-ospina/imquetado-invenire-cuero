@@ -214,6 +214,7 @@ header nav a:hover{
     background-color: #88ABC2;
     background-image: url("../file_img/inventario.jpg");
     background-size:cover;
+    background-attachment: fixed;
     /* height: 700px; */
     max-width: 100%;
     height: auto;
