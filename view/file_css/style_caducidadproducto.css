@@ -97,10 +97,10 @@ h1{
   grid-column: 1 / span 10;
   grid-row: 3;
   height: 115px;
-  background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+  /* background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
   background-repeat: no-repeat;
   background-size: 200px auto;
-  background-position: left auto;
+  background-position: left auto; */
   background-color:  #88ABC2;
   font-size: 40px;
   /* text-decoration: underline overline; */
@@ -110,6 +110,7 @@ h1{
   color: white;
   overflow:hidden; 
 }
+
 @media (max-width: 822px){
 	.cuadro{
 		height: 590px;

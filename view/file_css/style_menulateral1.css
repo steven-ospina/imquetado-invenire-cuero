@@ -92,22 +92,22 @@ h1{
 	text-align: center;
 }
 .pie_de_pagina{
-  grid-column: 1 / span 10;
-  grid-row: 3;
-  height: 115px;
-  background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
-  background-repeat: no-repeat;
-  background-size: 200px auto;
-  background-position: left auto;
-  background-color: #88ABC2;
-  font-size: 40px;
-  /* text-decoration: underline overline; */
-  text-align: center;
-  font-family: Verdana, sans-serif;
-  text-shadow: -4px 4px black;
-  color: white;
-  overflow:hidden;  
-}
+	grid-column: 1 / span 10;
+	grid-row: 3;
+	height: 115px;
+	/* background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
+	background-repeat: no-repeat;
+	background-size: 200px auto;
+	background-position: left auto; */
+	background-color:  #88ABC2;
+	font-size: 40px;
+	/* text-decoration: underline overline; */
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	text-shadow: -4px 4px black;
+	color: white;
+	overflow:hidden; 
+  }
 @media (max-width: 825px){
 	.boton{
 		display: block;
