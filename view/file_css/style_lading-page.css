@@ -160,8 +160,8 @@ header nav a:hover{
 /*========================================================================================*/
 .lading{
     display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(3,100%);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 500px ;
     align-items: center;
     justify-content: center;
     background-image: url("../file_img/inventario.jpg");
