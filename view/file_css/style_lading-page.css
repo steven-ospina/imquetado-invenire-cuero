@@ -9,82 +9,9 @@
     box-sizing: border-box;
     font-family: verdana;
 }
-/*========================================================================================*/
-/*==PANTALLA DE ESCRITORIO GRANDE-LARGE (lg)==*/
-/*========================================================================================*/
- @media(min-width:1200px){
-
-    .col-lg-1 {width: 8.33%;}
-    .col-lg-2 {width: 16.66%;}
-    .col-lg-3 {width: 25%;}
-    .col-lg-4 {width: 33.33%;}
-    .col-lg-5 {width: 41.66%;}
-    .col-lg-6 {width: 50%;}
-    .col-lg-7 {width: 58.33%;}
-    .col-lg-8 {width: 66.66%;}
-    .col-lg-9 {width: 75%;}
-    .col-lg-10 {width: 83.33%;}
-    .col-lg-11 {width: 91.66%;}
-    .col-lg-12 {width: 100%;}
- }
-/*========================================================================================*/
-/*==   PANTALLA DE ESCRITORIO MEDIANO- MEDIUM (md)==*/
-/*========================================================================================*/
- @media(max-width:1199px) and (min-width:992px){
-
-    .col-md-1 {width: 8.33%;}
-    .col-md-2 {width: 16.66%;}
-    .col-md-3 {width: 25%;}
-    .col-md-4 {width: 33.33%;}
-    .col-md-5 {width: 41.66%;}
-    .col-md-6 {width: 50%;}
-    .col-md-7 {width: 58.33%;}
-    .col-md-8 {width: 66.66%;}
-    .col-md-9 {width: 75%;}
-    .col-md-10 {width: 83.33%;}
-    .col-md-11 {width: 91.66%;}
-    .col-md-12 {width: 100%;}
- }
-/*========================================================================================*/
-/*==    PANTALLA DE TABLE- SMALL (SM)==*/
-/*========================================================================================*/
- @media(max-width:991px) and (min-width:768px){
-
-    .col-sm-1 {width: 8.33%;}
-    .col-sm-2 {width: 16.66%;}
-    .col-sm-3 {width: 25%;}
-    .col-sm-4 {width: 33.33%;}
-    .col-sm-5 {width: 41.66%;}
-    .col-sm-6 {width: 50%;}
-    .col-sm-7 {width: 58.33%;}
-    .col-sm-8 {width: 66.66%;}
-    .col-sm-9 {width: 75%;}
-    .col-sm-10 {width: 83.33%;}
-    .col-sm-11 {width: 91.66%;}
-    .col-sm-12 {width: 100%;}
- }
 
 /*========================================================================================*/
-/*==    PANTALLA DE PHONES- EXTRA-SMALL (XS)==*/
-/*========================================================================================*/
- @media(max-width:767px){
-
-    .col-xs-1 {width: 8.33%;}
-    .col-xs-2 {width: 16.66%;}
-    .col-xs-3 {width: 25%;}
-    .col-xs-4 {width: 33.33%;}
-    .col-xs-5 {width: 41.66%;}
-    .col-xs-6 {width: 50%;}
-    .col-xs-7 {width: 58.33%;}
-    .col-xs-8 {width: 66.66%;}
-    .col-xs-9 {width: 75%;}
-    .col-xs-10 {width: 83.33%;}
-    .col-xs-11 {width: 91.66%;}
-    .col-xs-12 {width: 100%;}
- }
-
-/*========================================================================================*/
-/*==inicio de la pagina: es esta parte odemos editar el header de la pagina==*/
+/*==inicio de la pagina: es esta parte podemos editar el header de la pagina==*/
 /*========================================================================================*/
 .header{
     width:100%;
@@ -111,36 +38,36 @@
 
 .wrapper-2{
     width: 100%;
-    max-width:1200px;
     margin: auto;
     overflow: hidden;
-    padding: 20px;
+    padding: 50px; 
+    color: white;
     /* border: 1px solid black; */
+    position: relative;
+    bottom: 10px;
 }
-@media screen and (max-width:1000px){
-    .img_2{
-        width: 100%;
-    }
-    .wrapper-2{
-        width: 100%;
-    }
 
-}
 /*========================================================================================*/
 /*==editor del logo==*/
 /*========================================================================================*/
 header .logo{
-    color: white;
+    color: #ffffff;
     font-size: 40px;
     line-height: 160px;
     float: left;
+    position: relative;
+    right: 20px;
+    top: 2px;
 }
 
-footer .logo-footer{
+/* footer .logo-footer{
     font-size: 40px;
-    line-height: 200px;
+    line-height: 100px;
     float: right;
-}
+    border: 1px solid black;
+    width: 15%;
+    height: 80%;
+} */
 /*========================================================================================*/
 /*==editor el menu==*/
 /*========================================================================================*/
@@ -188,16 +115,17 @@ header nav a:hover{
 /*========================================================================================*/
 .pie_de_pagina{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,100%);
     background-color: #88ABC2;
-    height: 150px;
+    height: 15  0px;
     /* background-image: url("../file_img/caja-invenire-cuero.png");
     background-repeat: no-repeat;
     background-size: 150px auto;
     background-position: left 20px; */
-    font-size: 40px;
+    font-size: 30px;
     /* text-decoration: underline overline; */
-    text-align: center;
+    text-align: le;
     /* padding-top: 5px; */
     font-family: Verdana, sans-serif; 
     text-shadow: -4px 4px black;
@@ -205,47 +133,69 @@ header nav a:hover{
     overflow:hidden;
     /* border: 1px solid black; */
 }
+.pies{
+    grid-column:2 / span 3;
+    /* background:url(../file_img/what_meme.gif);
+    background-size: cover; */
+    text-align: center;
+    position: relative;
+
+}
+.pies-letras{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 50px ;
+    font-size: 35px;
+    
+}
+.logo-footer{
+    grid-column:1 / span 1;
+    /* background:url(../file_img/john\ travolta.gif);
+    background-size: cover; */
+}
+
 /*========================================================================================*/
 /*==en este lugar es para editar el lading page de la pagina==*/
 /*========================================================================================*/
 .lading{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    background-color: #88ABC2;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(3,100%);
+    align-items: center;
+    justify-content: center;
     background-image: url("../file_img/inventario.jpg");
     background-size:cover;
     background-attachment: fixed;
     /* height: 700px; */
-    max-width: 100%;
-    height: auto;
-    
+    position: relative;
+    z-index: 5;
+
+
 }
 /*========================================================================================*/
 /*==para editar todo lo que tenga que ver con al infomacion==*/
 /*========================================================================================*/
 .contenido{
-
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     align-items: center;
     justify-content: center;
-    height: 600px;
     background: rgba(169,171,173, .5);
     font-family: Verdana, sans-serif; 
+    z-index: -2;
   }
 
-.contenido p{
-    margin-bottom: 1em;
+   /* .lading{
+    opacity: 0.8;
+    background: rgba(169,171,173, .5);
+  }  */
+.aside1{
+    width: 100%;
+    height: 100%;
+    background: rgba(169,171,173, .5);
 }
-
-
-@media screen and (max-width:900px){
-
-    header .logo,.header nav{
-        width: 100%;
-        text-align: center;
-        line-height: 100px;
-    }
- }
 /*========================================================================================*/
 /*==editor de las imagenes==*/
 /*========================================================================================*/
@@ -263,9 +213,279 @@ header nav a:hover{
 .img_3 {
     max-width: 100%;
     height: auto;
+}
 
+  /*========================================================================================*/
+ /*==4k  = 2560px==*/
+ /*========================================================================================*/
+/* @media(min-width:1400px) and (max-width:2560px) {
+    header.header{
+        width: 150%;
+    }
+    section.lading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        background-image: url("../file_img/what_meme.gif");
+        background-size:cover;
+        background-attachment: fixed;
+        height: 700px; 
+        width: 10000%;
+        height: auto;
+        position: relative;
+    }
+    section.wrapper-2{
+        width: 150%;
+        height: 900px;
+    }
+    footer.pie_de_pagina{
+        width: 150%;
+    }
+    aside{
+        background: #33ff0080;
+
+    }
+    .contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        background: rgba(182, 165, 128, 0.699);
+        font-family: Verdana, sans-serif; 
+        width: 150%;
+      }
+      .img_4{
+        width: 900px;
+        height: 990px;
+        border: 1px solid black;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        background: none;
+        z-index: 3;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+    }
+
+} */
+ /*========================================================================================*/
+ /*==Laltop L = 1440px==*/
+ /*========================================================================================*/
+ @media (max-width:1440px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    aside{
+        /* background: #ff000d; */
+        color: white;
+        /* background: rgba(169,171,173, .5); */
+        font-family: Verdana, sans-serif; 
+    }
+    .contenido{
+        width: 100%;
+        height: 100%;
+        background: rgba(169,171,173, .5);
+    }
+} 
+ /*========================================================================================*/
+ /*==Laltop = 1024px==*/
+ /*========================================================================================*/
+@media (max-width:1024px) {
+
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    aside{
+        /* background: #ff000d; */
+        color: white;
+        /* background: rgba(169,171,173, .5); */
+        font-family: Verdana, sans-serif; 
+    }
+    .contenido{
+        width: 100%;
+        height: 100%;
+        background: rgba(169,171,173, .5);
+    }
+}
+ /*========================================================================================*/
+ /*==Tablet = 768px==*/
+ /*========================================================================================*/
+ @media (max-width:768px) {
+
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    aside{
+        grid-column:1 / span 1;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #ffe600; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif; 
+
+    }
+
+}
+ /*========================================================================================*/
+ /*==Movil L = 425px==*/
+ /*========================================================================================*/
+ @media (max-width:425px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif; 
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 18px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+    }
+}
+ /*========================================================================================*/
+ /*==Movil M = 375px==*/
+ /*========================================================================================*/
+ @media (max-width:375px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif; 
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 18px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+    }
+}
+
+ /*========================================================================================*/
+ /*==Movil S = 320px==*/
+ /*========================================================================================*/
+ @media (max-width:320px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif; 
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 17px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: 1px;
+    }
 }
 
 /*========================================================================================*/
-/*====*/
+/*==GAME OVER- EL SOCIO ==*/
 /*========================================================================================*/
