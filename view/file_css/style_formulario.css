@@ -11,81 +11,6 @@
     /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */   
 }
 /*========================================================================================*/
-/*==PANTALLA DE ESCRITORIO GRANDE-LARGE (lg)==*/
-/*========================================================================================*/
-@media(min-width:1200px){
-
-    .col-lg-1 {width: 8.33%;}
-    .col-lg-2 {width: 16.66%;}
-    .col-lg-3 {width: 25%;}
-    .col-lg-4 {width: 33.33%;}
-    .col-lg-5 {width: 41.66%;}
-    .col-lg-6 {width: 50%;}
-    .col-lg-7 {width: 58.33%;}
-    .col-lg-8 {width: 66.66%;}
-    .col-lg-9 {width: 75%;}
-    .col-lg-10 {width: 83.33%;}
-    .col-lg-11 {width: 91.66%;}
-    .col-lg-12 {width: 100%;}
- }
-/*========================================================================================*/
-/*==   PANTALLA DE ESCRITORIO MEDIANO- MEDIUM (md)==*/
-/*========================================================================================*/
- @media(max-width:1199px) and (min-width:992px){
-
-    .col-md-1 {width: 8.33%;}
-    .col-md-2 {width: 16.66%;}
-    .col-md-3 {width: 25%;}
-    .col-md-4 {width: 33.33%;}
-    .col-md-5 {width: 41.66%;}
-    .col-md-6 {width: 50%;}
-    .col-md-7 {width: 58.33%;}
-    .col-md-8 {width: 66.66%;}
-    .col-md-9 {width: 75%;}
-    .col-md-10 {width: 83.33%;}
-    .col-md-11 {width: 91.66%;}
-    .col-md-12 {width: 100%;}
- }
-/*========================================================================================*/
-/*==    PANTALLA DE TABLE- SMALL (SM)==*/
-/*========================================================================================*/
- @media(max-width:991px) and (min-width:768px){
-
-    .col-sm-1 {width: 8.33%;}
-    .col-sm-2 {width: 16.66%;}
-    .col-sm-3 {width: 25%;}
-    .col-sm-4 {width: 33.33%;}
-    .col-sm-5 {width: 41.66%;}
-    .col-sm-6 {width: 50%;}
-    .col-sm-7 {width: 58.33%;}
-    .col-sm-8 {width: 66.66%;}
-    .col-sm-9 {width: 75%;}
-    .col-sm-10 {width: 83.33%;}
-    .col-sm-11 {width: 91.66%;}
-    .col-sm-12 {width: 100%;}
- }
-
-/*========================================================================================*/
-/*==    PANTALLA DE PHONES- EXTRA-SMALL (XS)==*/
-/*========================================================================================*/
- @media(max-width:767px){
-
-    .col-xs-1 {width: 8.33%;}
-    .col-xs-2 {width: 16.66%;}
-    .col-xs-3 {width: 25%;}
-    .col-xs-4 {width: 33.33%;}
-    .col-xs-5 {width: 41.66%;}
-    .col-xs-6 {width: 50%;}
-    .col-xs-7 {width: 58.33%;}
-    .col-xs-8 {width: 66.66%;}
-    .col-xs-9 {width: 75%;}
-    .col-xs-10 {width: 83.33%;}
-    .col-xs-11 {width: 91.66%;}
-    .col-xs-12 {width: 100%;}
- }
-
-
-/*========================================================================================*/
 /*==inicio de la pagina: es esta parte odemos editar el header de la pagina==*/
 /*========================================================================================*/
 
@@ -148,30 +73,31 @@
     font-size: 20px;
     border-radius: 5px;
 }
-@media (max-width:480px){
+/* @media (max-width:480px){
     form{
         width: 100%;
     }
     footer{
         width: 100%;
     }
-}
+} */
 
 /*========================================================================================*/
 /*==fin de pagina: en esta parte podemos editar el footer de la pagina==*/
 /*========================================================================================*/
 .pie_de_pagina{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,100%);
     background-color: #88ABC2;
-    height: 150px;
+    /* height: 150px; */
     /* background-image: url("../file_img/caja-invenire-cuero.png");
     background-repeat: no-repeat;
     background-size: 150px auto;
     background-position: left 20px; */
-    font-size: 40px;
+    font-size: 30px;
     /* text-decoration: underline overline; */
-    text-align: center;
+    text-align: le;
     /* padding-top: 5px; */
     font-family: Verdana, sans-serif; 
     text-shadow: -4px 4px black;
@@ -179,17 +105,167 @@
     overflow:hidden;
     /* border: 1px solid black; */
 }
+.pies{
+    grid-column:2 / span 3;
+    /* background:url(../file_img/what_meme.gif);
+    background-size: cover; */
+    text-align: center;
+    position: relative;
 
-footer .logo-footer{
-    font-size: 40px;
-    line-height: 200px;
-    float: right;
 }
+.pies-letras{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 50px ;
+    font-size: 35px;
+    
+}
+.logo-footer{
+    grid-column:1 / span 1;
+    /* background:url(../file_img/john\ travolta.gif);
+    background-size: cover; */
+}
+.img_3 {
+    max-width: 100%;
+    height: auto;
+}
+
 /*========================================================================================*/
 /*====*/
 /*========================================================================================*/
 .browsers, .browsers2{
     font-weight: bolder;
 }
+
+  /*========================================================================================*/
+ /*==4k  = 2560px==*/
+ /*========================================================================================*/
+/* @media(min-width:1400px) and (max-width:2560px) {
+
+
+} */
+ /*========================================================================================*/
+ /*==Laltop L = 1440px==*/
+ /*========================================================================================*/
+ /* @media (max-width:1440px) {
+
+}  */
+ /*========================================================================================*/
+ /*==Laltop = 1024px==*/
+ /*========================================================================================*/
+/* @media (max-width:1024px) {
+
+
+} */
+ /*========================================================================================*/
+ /*==Tablet = 768px==*/
+ /*========================================================================================*/
+ /* @media (max-width:768px) {
+
+} */
+ /*========================================================================================*/
+ /*==Movil L = 425px==*/
+ /*========================================================================================*/
+ @media (max-width:425px) {
+    .formulario{
+        width: 90%;
+    }
+    .pies-letras{
+        font-size: 21px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+    }
+
+}
+ /*========================================================================================*/
+ /*==Movil M = 375px==*/
+ /*========================================================================================*/
+ @media (max-width:375px) {
+    .formulario{
+        width: 90%;
+        height: 500px;
+        font-family: Verdana, sans-serif; 
+    }
+    .pies-letras{
+        font-size: 20px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+        font-family: Verdana, sans-serif; 
+    }
+    .formulario h2{
+        margin: 1px ;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 2px;
+        font-family: Verdana, sans-serif; 
+    }
+    .formulario input{
+        width: 70%;
+        height: 30px;
+        font-size:15px; 
+        letter-spacing: 2px;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="password"],
+    .formulario input[type="email"],
+    .formulario input[list="browsers"],
+    .formulario input[list="browsers2"]{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    }
+
+}
+
+ /*========================================================================================*/
+ /*==Movil S = 320px==*/
+ /*========================================================================================*/
+ @media (max-width:320px) {
+    .formulario{
+        width: 90%;
+        height: 500px;
+        font-family: Verdana, sans-serif;
+    }
+    .pies-letras{
+        font-size: 17px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: 1px;
+    }
+    .formulario h2{
+        margin: 1px ;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 1px;
+        font-family: Verdana, sans-serif; 
+    }
+    .formulario input{
+        width: 75%;
+        height: 30px;
+        font-size:15px; 
+        letter-spacing: 2px;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="password"],
+    .formulario input[type="email"],
+    .formulario input[list="browsers"],
+    .formulario input[list="browsers2"]{
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    }
+}
+
+/*========================================================================================*/
+/*==GAME OVER *_* EL SOCIO ==*/
+/*========================================================================================*/
 
 

@@ -118,7 +118,7 @@ header nav a:hover{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,100%);
     background-color: #88ABC2;
-    height: 15  0px;
+    /* height: 15 0px; */
     /* background-image: url("../file_img/caja-invenire-cuero.png");
     background-repeat: no-repeat;
     background-size: 150px auto;
