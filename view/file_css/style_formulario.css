@@ -7,7 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: verdana;
-    /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */   
+    /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */
 }
 /*========================================================================================*/
 /*==inicio de la pagina: es esta parte odemos editar el header de la pagina==*/
@@ -20,7 +20,7 @@
     background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
     background-repeat: no-repeat;
     background-size: 320px auto;
-    background-position: center ; 
+    background-position: center ;
     /*background-color: #775757a8;*/
 }
 /*========================================================================================*/
@@ -58,7 +58,7 @@
 .formulario input{
     width: 60%;
     height: 30px;
-    font-size:18px; 
+    font-size:18px;
     letter-spacing: 2px;
     font-family: arial;
 }
@@ -96,9 +96,9 @@
     background-position: left 20px; */
     font-size: 30px;
     /* text-decoration: underline overline; */
-    text-align: le;
+    text-align: center;
     /* padding-top: 5px; */
-    font-family: Verdana, sans-serif; 
+    font-family: Verdana, sans-serif;
     text-shadow: -4px 4px black;
     color: white;
     overflow:hidden;
@@ -118,7 +118,7 @@
     top: 30px;
     right: 50px ;
     font-size: 35px;
-    
+
 }
 .logo-footer{
     grid-column:1 / span 1;
@@ -186,7 +186,7 @@
     .formulario{
         width: 90%;
         height: 500px;
-        font-family: Verdana, sans-serif; 
+        font-family: Verdana, sans-serif;
     }
     .pies-letras{
         font-size: 20px;
@@ -194,7 +194,7 @@
         text-shadow: 1px 2px black;
         position: relative;
         left: -15px;
-        font-family: Verdana, sans-serif; 
+        font-family: Verdana, sans-serif;
     }
     .formulario h2{
         margin: 1px ;
@@ -202,12 +202,12 @@
         font-weight: bold;
         line-height: 2;
         letter-spacing: 2px;
-        font-family: Verdana, sans-serif; 
+        font-family: Verdana, sans-serif;
     }
     .formulario input{
         width: 70%;
         height: 30px;
-        font-size:15px; 
+        font-size:15px;
         letter-spacing: 2px;
     }
     .formulario input[type="text"],
@@ -244,12 +244,12 @@
         font-weight: bold;
         line-height: 2;
         letter-spacing: 1px;
-        font-family: Verdana, sans-serif; 
+        font-family: Verdana, sans-serif;
     }
     .formulario input{
         width: 75%;
         height: 30px;
-        font-size:15px; 
+        font-size:15px;
         letter-spacing: 2px;
     }
     .formulario input[type="text"],
@@ -266,5 +266,3 @@
 /*========================================================================================*/
 /*==GAME OVER *_* EL SOCIO ==*/
 /*========================================================================================*/
-
-
