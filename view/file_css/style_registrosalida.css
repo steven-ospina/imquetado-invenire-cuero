@@ -5,7 +5,7 @@
 .contenedor{
 	display: grid;
 	grid-template-columns: repeat(10,1fr);
-	grid-template-rows: 200px 500px 100px 80px;
+	grid-template-rows: 200px 500px 100px ;
 }
 
 .logo{
@@ -46,7 +46,7 @@
 #menu li{
 	-webkit-transition:all .9s ease;
 	-moz-transition:all .9s ease;
-	-ms-transition:all .9s ease; 
+	-ms-transition:all .9s ease;
 }
 .cuadro{
 	grid-column: 2 / span 9;
@@ -94,31 +94,53 @@ h1{
 	text-align: center;
 }
 .pie_de_pagina{
-	grid-column: 1 / span 10;
-	grid-row: 3;
-	height: 115px;
-	/* background-image: url("../file_img/logo-invenire-cuero-new-prototipo.png");
-	background-repeat: no-repeat;
-	background-size: 200px auto;
-	background-position: left auto; */
-	background-color:  #88ABC2;
-	font-size: 40px;
-	/* text-decoration: underline overline; */
-	text-align: center;
+  grid-column: 1 / span 10;
+  grid-row: 3;
+  height: 115px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+  background-position: left auto;
+  background-color:  #88ABC2;
+  font-size: 40px;
+  /* text-decoration: underline overline; */
+  text-align: center;
 	font-family: Verdana, sans-serif;
 	text-shadow: -4px 4px black;
 	color: white;
-	overflow:hidden; 
-  }
+	overflow:hidden;
+}
+@media (max-width: 779px) {
+	.contenedor{
+		grid-template-columns:1fr 9fr;
+		grid-template-rows: 200px 500px 100px 80px;
+	}
+}
+@media (max-width: 779px){
+	.cuadro{
+		grid-column: 2;
+	}
+}
 @media (max-width: 830px){
 	.cuadro{
 		height: 670px;
 	}
 }
+@media (max-width: 824px){
+	.contenedor{
+		grid-template-columns:1fr 9fr;
+		grid-template-rows: 200px 500px 100px 80px;
+	}
+}
+@media (max-width: 824px){
+	.pie_de_pagina{
+		grid-row: 4;
+	}
+}
 @media (max-width: 826px){
 	.boton{
 		display: block;
-	}	
+	}
 }
 @media (max-width: 826px){
 	.buscar{
@@ -127,7 +149,7 @@ h1{
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 }
 @media (max-width: 790px){
 	.botonabajo{
@@ -154,3 +176,48 @@ h1{
 		grid-row: 40;
 	}
 }
+/*@media (max-width: 450px){
+	.cuadro{
+		display: none;
+	}
+}*/
+@media (max-width: 450px){
+	.contenedor{
+		grid-template-columns: 1fr;
+		grid-template-rows: 250px 500px 680px 80px;
+	}
+}
+@media (max-width: 450px){
+	.logo{
+		grid-row: 1;
+		grid-column: 1;
+	}
+}
+@media (max-width: 450px){
+	.men{
+		grid-column: 1;
+		grid-row: 2;
+	}
+}
+@media(max-width: 450px){
+	.cuadro{
+		grid-column: 1;
+		grid-row: 3;
+	}
+}
+@media (max-width: 450px){
+	.pie_de_pagina{
+		grid-row: 4;
+	}
+}
+@media (max-width: 450px){
+	.pies{
+		font-size: 20px;
+	}
+}
+/*@media (max-width: 450px)
+{
+	.cuadro{
+		grid-row: 3;
+	}
+}*/
