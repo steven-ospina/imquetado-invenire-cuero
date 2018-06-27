@@ -1,0 +1,62 @@
+ /*========================================================================================*/
+ /*==Globales==*/
+ /*========================================================================================*/
+ *{
+    margin: 0px;
+    padding: 0px;
+    /* list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: verdana; */
+}
+/*========================================================================================*/
+/*==header==*/
+/*========================================================================================*/
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 100px;
+    height: 100px;
+    background: #1695b15e;
+}
+.a{
+    grid-column:3; 
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.b{
+    grid-column: 4;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.c{
+    grid-column: 5;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+/*========================================================================================*/
+/*==section==*/
+/*========================================================================================*/
+.imagen_fondo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 100vh ;
+    background-image: url("../file_img/imagenes_fondo/fondo_lading.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+
+}
+/*========================================================================================*/
+/*====*/
+/*========================================================================================*/

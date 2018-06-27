@@ -1,0 +1,491 @@
+ /*========================================================================================*/
+ /*==Globales==*/
+ /*========================================================================================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+/*========================================================================================*/
+/*==inicio de la pagina: es esta parte podemos editar el header de la pagina==*/
+/*========================================================================================*/
+.header{
+    width:100%;
+    /* height: 120px; */
+    background-color:#88ABC2;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    /* background-image: url("../file_img/caja-invenire-cuero.png");
+    background-repeat: no-repeat;
+    background-size: 160px auto;
+    background-position: left 5px;  */
+    /* border: 1px solid black; */
+    font-family: Verdana, sans-serif;
+}
+/*========================================================================================*/
+/*==para centra texto en el archivo==*/
+/*========================================================================================*/
+.wrapper{
+    width: 100%;
+    max-width:1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.wrapper-2{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px;
+    color: white;
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: 10px;
+}
+
+/*========================================================================================*/
+/*==editor del logo==*/
+/*========================================================================================*/
+header .logo{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 160px;
+    float: left;
+    position: relative;
+    right: 20px;
+    top: 2px;
+}
+
+/* footer .logo-footer{
+    font-size: 40px;
+    line-height: 100px;
+    float: right;
+    border: 1px solid black;
+    width: 15%;
+    height: 80%;
+} */
+/*========================================================================================*/
+/*==editor el menu==*/
+/*========================================================================================*/
+header nav{
+    float: right;
+    line-height: 160px;
+}
+
+header nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+header nav a:hover{
+    background: white;
+    color: black;
+    border-radius: 50px;
+}
+.header{
+    font-weight: bold;
+}
+
+.header_2{
+    position: fixed;
+    height: 100px;
+}
+
+.header_2 .logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+.header_2 nav{
+    line-height: 100px;
+}
+
+/*========================================================================================*/
+/*==fin de pagina: en esta parte podemos editar el footer de la pagina==*/
+/*========================================================================================*/
+.pie_de_pagina{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,100%);
+    background-color: #88ABC2;
+    /* height: 15 0px; */
+    /* background-image: url("../file_img/caja-invenire-cuero.png");
+    background-repeat: no-repeat;
+    background-size: 150px auto;
+    background-position: left 20px; */
+    font-size: 30px;
+    /* text-decoration: underline overline; */
+    text-align: center;
+    /* padding-top: 5px; */
+    font-family: Verdana, sans-serif;
+    text-shadow: -4px 4px black;
+    color: white;
+    overflow:hidden;
+    /* border: 1px solid black; */
+}
+.pies{
+    grid-column:2 / span 3;
+    /* background:url(../file_img/what_meme.gif);
+    background-size: cover; */
+    text-align: center;
+    position: relative;
+
+}
+.pies-letras{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 50px ;
+    font-size: 35px;
+
+}
+.logo-footer{
+    grid-column:1 / span 1;
+    /* background:url(../file_img/john\ travolta.gif);
+    background-size: cover; */
+}
+
+/*========================================================================================*/
+/*==en este lugar es para editar el lading page de la pagina==*/
+/*========================================================================================*/
+.lading{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 500px ;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../file_img/inventario.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    /* height: 700px; */
+    position: relative;
+    z-index: 5;
+
+
+}
+/*========================================================================================*/
+/*==para editar todo lo que tenga que ver con al infomacion==*/
+/*========================================================================================*/
+.contenido{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    justify-content: center;
+    background: rgba(169,171,173, .5);
+    font-family: Verdana, sans-serif;
+    z-index: -2;
+  }
+
+   /* .lading{
+    opacity: 0.8;
+    background: rgba(169,171,173, .5);
+  }  */
+.aside1{
+    width: 100%;
+    height: 100%;
+    background: rgba(169,171,173, .5);
+}
+/*========================================================================================*/
+/*==editor de las imagenes==*/
+/*========================================================================================*/
+
+.img_1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_3 {
+    max-width: 100%;
+    height: auto;
+}
+
+  /*========================================================================================*/
+ /*==4k  = 2560px==*/
+ /*========================================================================================*/
+/* @media(min-width:1400px) and (max-width:2560px) {
+    header.header{
+        width: 150%;
+    }
+    section.lading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        background-image: url("../file_img/what_meme.gif");
+        background-size:cover;
+        background-attachment: fixed;
+        height: 700px;
+        width: 10000%;
+        height: auto;
+        position: relative;
+    }
+    section.wrapper-2{
+        width: 150%;
+        height: 900px;
+    }
+    footer.pie_de_pagina{
+        width: 150%;
+    }
+    aside{
+        background: #33ff0080;
+
+    }
+    .contenido{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        background: rgba(182, 165, 128, 0.699);
+        font-family: Verdana, sans-serif;
+        width: 150%;
+      }
+      .img_4{
+        width: 900px;
+        height: 990px;
+        border: 1px solid black;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        background: none;
+        z-index: 3;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+    }
+
+} */
+ /*========================================================================================*/
+ /*==Laltop L = 1440px==*/
+ /*========================================================================================*/
+ @media (max-width:1440px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    aside{
+        /* background: #ff000d; */
+        color: white;
+        /* background: rgba(169,171,173, .5); */
+        font-family: Verdana, sans-serif;
+    }
+    .contenido{
+        width: 100%;
+        height: 100%;
+        background: rgba(169,171,173, .5);
+    }
+}
+ /*========================================================================================*/
+ /*==Laltop = 1024px==*/
+ /*========================================================================================*/
+@media (max-width:1024px) {
+
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+    aside{
+        /* background: #ff000d; */
+        color: white;
+        /* background: rgba(169,171,173, .5); */
+        font-family: Verdana, sans-serif;
+    }
+    .contenido{
+        width: 100%;
+        height: 100%;
+        background: rgba(169,171,173, .5);
+    }
+}
+ /*========================================================================================*/
+ /*==Tablet = 768px==*/
+ /*========================================================================================*/
+ @media (max-width:768px) {
+
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        margin-top: 0px;
+        z-index: 1;
+    }
+    aside{
+        grid-column:1 / span 1;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #ffe600; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif;
+
+    }
+
+}
+ /*========================================================================================*/
+ /*==Movil L = 425px==*/
+ /*========================================================================================*/
+ @media (max-width:425px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif;
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 18px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+    }
+}
+ /*========================================================================================*/
+ /*==Movil M = 375px==*/
+ /*========================================================================================*/
+ @media (max-width:375px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif;
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 18px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: -15px;
+    }
+}
+
+ /*========================================================================================*/
+ /*==Movil S = 320px==*/
+ /*========================================================================================*/
+ @media (max-width:320px) {
+    header .logo,.header nav{
+        width: 100%;
+        text-align: center;
+        line-height: 100px;
+
+    }
+    .lading{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,100%);
+    }
+    aside{
+        grid-column:1 / span 2;
+        grid-row: 2 / span 1 ;
+        text-align: center;
+        /* background: #3cff00; */
+        /* border: 1px solid black; */
+        z-index: -1;
+        padding: 10px;
+        color: white;
+        background: rgba(169,171,173, .5);
+        font-family: Verdana, sans-serif;
+    }
+    .img_2{
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2 ;
+        /* border: 1px solid black; */
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .pies-letras{
+        font-size: 17px;
+        overflow: hidden;
+        text-shadow: 1px 2px black;
+        position: relative;
+        left: 1px;
+    }
+}
+
+/*========================================================================================*/
+/*==GAME OVER- EL SOCIO ==*/
+/*========================================================================================*/
