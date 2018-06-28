@@ -17,12 +17,12 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 100px;
-    height: 100px;
+    height: 75px;
     background: #1695b15e;
 }
 .a{
     grid-column:3; 
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -30,22 +30,29 @@
 }
 .b{
     grid-column: 4;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
+    
 }
 .c{
     grid-column: 5;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
 }
+.a,.b,.c{
+    /* font-family: 'Press Start 2P', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+    /* font-family: 'Pattaya', sans-serif; */
+    font-family: 'Galada', cursive;
+}
 /*========================================================================================*/
-/*==section==*/
+/*==imagen de fondo==*/
 /*========================================================================================*/
 .imagen_fondo{
     display: grid;
