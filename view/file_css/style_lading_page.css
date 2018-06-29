@@ -16,7 +16,7 @@
 .header{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 100px;
+    grid-template-rows: 75px;
     height: 75px;
     background: #1695b15e;
 }
@@ -55,9 +55,9 @@
 /*==imagen de fondo==*/
 /*========================================================================================*/
 .imagen_fondo{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 100vh ;
+    grid-template-rows: 100vh ; */
     background-image: url("../file_img/imagenes_fondo/fondo_lading.jpg");
     background-size:cover;
     background-repeat: no-repeat;
@@ -65,5 +65,22 @@
 
 }
 /*========================================================================================*/
+/*==Section==*/
+/*========================================================================================*/
+.section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100vh ;
+}
+.div1{
+    background: #5a39075e;
+    /* border: 1px solid black; */
+}
+.div2{
+    background: #2e075a5e;
+    /* border: 1px solid black; */
+}
+/*========================================================================================*/
 /*====*/
 /*========================================================================================*/
+
