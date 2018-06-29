@@ -74,6 +74,10 @@
 }
 .div1{
     background: #5a39075e;
+    font-family: 'Galada', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
     /* border: 1px solid black; */
 }
 .div2{
