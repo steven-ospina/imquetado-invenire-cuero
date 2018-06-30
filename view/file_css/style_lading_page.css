@@ -45,12 +45,13 @@
     color: #ffffff;
     font-size: 20px;
 }
-.a,.b,.c{
+.a,.b,.c,.logo{
     /* font-family: 'Press Start 2P', cursive; */
     /* font-family: 'Oleo Script Swash Caps', cursive; */
     /* font-family: 'Pattaya', sans-serif; */
     font-family: 'Galada', cursive;
     font-size: 25px;
+    color: #ffffff;
 }
 /*========================================================================================*/
 /*==imagen de fondo==*/
@@ -73,6 +74,8 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 70vh ;
+    position: relative;
+    z-index: 1;
 }
 .div1{
     background: #5a39075e;
@@ -115,6 +118,15 @@
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: 200px;
     background: #044352c2;
+}
+/*========================================================================================*/
+/*====*/
+/*========================================================================================*/
+.imagenes{
+    position: relative;
+    z-index: -1;
+    /* opacity: 0.6; */
+    border-radius:400px;
 }
 /*========================================================================================*/
 /*====*/
