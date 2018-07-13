@@ -8,6 +8,15 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: verdana; */
+    font-family: 'Galada', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    /* color: white; */
+    /* color: black; */
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
 }
 /*========================================================================================*/
 /*==header==*/
@@ -17,8 +26,8 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 75px;
-    height: 75px;
-    background: #1695b15e;
+    height: 70px;
+    background: #1695b141;
 }
 .a{
     grid-column:3; 
@@ -49,7 +58,8 @@
     /* font-family: 'Press Start 2P', cursive; */
     /* font-family: 'Oleo Script Swash Caps', cursive; */
     /* font-family: 'Pattaya', sans-serif; */
-    font-family: 'Galada', cursive;
+    /* font-family: 'Galada', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 25px;
     color: #ffffff;
 }
@@ -60,9 +70,10 @@
     /* display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: 100vh ; */
-    background-image: url("../file_img/imagenes_fondo/fondo_lading.jpg");
+    background-image: url("../file_img/imagenes_fondo/fondo_lading_4.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
     /* height: 140vh; */
     /* background-attachment: fixed; */
 
@@ -73,60 +84,235 @@
 .section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 70vh ;
+    grid-template-rows: 65vh ;
     position: relative;
     z-index: 1;
+    align-items: center;
+    overflow: hidden;
 }
 .div1{
-    background: #5a39075e;
-    font-family: 'Galada', cursive;
+    /* background: #5a39075e; */
+    /* font-family: 'Galada', cursive; */
     text-align: center;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
+    
     /* border: 1px solid black; */
 }
 .div2{
-    background: #2e075a5e;
+    /* background: #2e075a5e; */
     /* border: 1px solid black; */
 }
 
 .div3{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 125px ;
-    background: #075a3a5e;
+    grid-template-rows: 195px ;
+    background: #075a3a27;
 }
 /*========================================================================================*/
 /*==editor email==*/
 /*========================================================================================*/
-.email{
-    width: 300px;
+/* .email{
+    width: 600px;
     height: 10px;
     margin: auto;
-    padding: 40px; 
+    padding: 50px; 
     border: 1px solid black;
     background: #075a3ab4;
+} */
+.email{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: 500px 300px 600px ; */
+    grid-template-rows: 90px 100px;
+    height: 150px;
+    /* margin: auto; */
+    background: #075a3a50;
+    /* margin-top: 10px; */
+    /* align-items: center; */
+    overflow: hidden;
 }
-.ema{
+.a1{
+    grid-column: 1;
+    grid-row: 2;
+    padding: 5px;
+    margin-left: 200px;
+
+}
+.a2{
+    grid-column: 2;
+    grid-row: 2;
+    padding: 5px;
+    margin-left: 9px;
+}
+.a3{
+    grid-column: 3;
+    grid-row: 2;
+}
+.pa{
+    grid-column: 1 / span 3;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    /* -webkit-text-fill-color: yellowgreen; */
+    /* -webkit-text-stroke: 1px black; */
+}
+.email input{
+    /* width: 60%;
+    height: 30px; */
+    font-size:18px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: none;
+}
+.email input[type="submit"]{
+    background-color: #00a2ff;
+    border: none;
+    width: 30%;
+    color: white;
+}
+.email input[type="submit"]:hover{
+    background-color: #03399c;
+}
+/* .ema{
     margin: auto 50px; 
-}
+} */
 /*========================================================================================*/
 /*==footer==*/
 /*========================================================================================*/
 .footer{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 200px;
+    grid-template-rows: 400px 50px;
     background: #044352c2;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
 }
+.footer1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.columna1{
+    grid-column: 1;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 50px;
+}
+.columna2{
+    grid-column: 2;
+    text-align: center;
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+.columna3{
+    grid-column: 3;
+    text-align: center;
+    padding: 50px;
+    /* border: 2px solid black; */
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.copyright{
+    grid-column: 1 ;
+    background: #044252f1;
+    
+}
+.information{
+    grid-column: 2 ;
+    background: #420452f1;
+    text-align: center;
+}
+.redes{
+    width: 15%;
+    height: 10%;
+}
+.contacto{
+    width: 10%;
+    height: 10%;
+}
+.icon-facebook{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    animation: facebook 5s infinite;
+}
+/* @keyframes facebook{
+    50% {color: #3B5999;} 
+
+} */
+.icon-facebook:hover{
+    color: #3b5999;
+}
+
+.icon-instagram{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: instagram 5s infinite;
+}
+@keyframes instagram {
+    /* 50% {color: #833ab4;} */ 
+    /* 0%   {color: #833ab4;}
+    25%  {color: #4c68d7;}
+    50%  {color: #cd486b;}
+    60%  {color: #cd486b;}
+    80%  {color: #fccc63;}
+    90%  {color: #bc2a8d;}
+    100% {color: #e95950;} */
+}
+.icon-instagram:hover{
+    color: #833ab4;
+    /* color:#8a3ab9 #4c68d7; */
+    /* background: linear-gradient(to bottom right, #8a3ab9, #4c68d7,#cd486b, #fbad50,#fccc63,#bc2a8d,#e95950); */
+}
+.icon-twitter{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: twitter 5s infinite;
+   
+}
+/* @keyframes twitter{
+    50% {color:  #55ACEE;} 
+
+} */
+.icon-twitter:hover{
+    color: #55acee;
+}
+
+.icon-blogger{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: blogger 5s infinite;
+   
+}
+/* @keyframes blogger{
+    50% {color:  #ff5722;} 
+
+} */
+.icon-blogger:hover{
+
+    color: #ff5722;
+}
+
 /*========================================================================================*/
-/*====*/
+/*==estilo imagenes en movimiento==*/
 /*========================================================================================*/
 .imagenes{
     position: relative;
     z-index: -1;
     /* opacity: 0.6; */
-    border-radius:400px;
+    border-radius:50px;
+    border: 10px solid  #64070785;
+    max-width: 100%;
+    height: auto;
 }
 /*========================================================================================*/
 /*====*/
