@@ -57,11 +57,6 @@ a{
     font-size: 20px;
 }
 .a,.b,.c,.logo{
-    /* font-family: 'Press Start 2P', cursive; */
-    /* font-family: 'Oleo Script Swash Caps', cursive; */
-    /* font-family: 'Pattaya', sans-serif; */
-    /* font-family: 'Galada', cursive; */
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 25px;
     color: #ffffff;
 }
@@ -207,9 +202,9 @@ a{
 }
 .columna1{
     grid-column: 1;
-    /* border: 1px solid black; */
     text-align: center;
     padding: 40px;
+    /* border: 1px solid black; */
 }
 .columna2{
     grid-column: 2;
