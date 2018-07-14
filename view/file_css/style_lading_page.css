@@ -324,11 +324,11 @@ a{
 .blogger:hover{
     color: #ff5722;
 }
-.icon-home3,.icon-phone,.icon-mail2,.icon-clock{
+.icon-location,.icon-phone,.icon-mail2,.icon-clock{
     font-size: 40px;
     color: white;
 }
-.icon-home3:hover{
+.icon-location:hover{
     color: #5a422b;
 }
 .home:hover{
