@@ -27,7 +27,7 @@ a{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 75px;
     height: 70px;
-    background: #1695b141;
+    background: #1695b12d;
     font-family: 'Galada', cursive;
     /* font-family: 'Roboto', sans-serif; */
 }
@@ -216,6 +216,7 @@ a{
     grid-column: 3;
     /* text-align: center; */
     padding: 40px;
+    font-family: 'Roboto', sans-serif;
     /* border: 2px solid black; */
 }
 
@@ -319,9 +320,12 @@ a{
 .blogger:hover{
     color: #ff5722;
 }
-.icon-location,.icon-phone,.icon-mail2,.icon-clock{
-    font-size: 40px;
+.icon-location,.icon-phone,.icon-mail2,.icon-clock,.icon-printer{
+    font-size: 30px;
     color: white;
+}
+.horario{
+    margin-left: 35px;
 }
 .icon-location:hover{
     color: #5a422b;
@@ -333,6 +337,9 @@ a{
 }
 .titulo-footer{
     font-size: 35px;
+}
+.titulo-footer3{
+    font-family: 'Galada', cursive;
 }
 /*========================================================================================*/
 /*==estilo imagenes en movimiento==*/

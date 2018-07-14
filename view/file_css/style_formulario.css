@@ -9,6 +9,10 @@
     font-family: verdana;
     /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */
 }
+a{
+    text-decoration: none;
+    color: #ffffff;
+}   
 /*========================================================================================*/
 /*==inicio de la pagina: es esta parte odemos editar el header de la pagina==*/
 /*========================================================================================*/
@@ -43,7 +47,7 @@
     max-width: 500px;
     width: 100%;
     height: 605px;
-    background-color: silver;
+    background-color: #3364ce3a;
     margin: 48px auto;
     position: relative;
     border-radius: 5px;
@@ -70,7 +74,8 @@
 .formulario input[list="browsers2"]{
     margin: 0 0 20px 0;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
+    border: none;
 }
 /* @media (max-width:480px){
     form{
@@ -82,54 +87,173 @@
 } */
 
 /*========================================================================================*/
-/*==fin de pagina: en esta parte podemos editar el footer de la pagina==*/
+/*==footer en esta parte podemos editar el footer==*/
 /*========================================================================================*/
-.pie_de_pagina{
+.footer{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,100%);
-    background-color: #88ABC2;
-    /* height: 150px; */
-    /* background-image: url("../file_img/caja-invenire-cuero.png");
-    background-repeat: no-repeat;
-    background-size: 150px auto;
-    background-position: left 20px; */
-    font-size: 30px;
-    /* text-decoration: underline overline; */
-    text-align: center;
-    /* padding-top: 5px; */
-    font-family: Verdana, sans-serif;
-    text-shadow: -4px 4px black;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 400px 50px;
+    background: #044352c2;
+    overflow: hidden;
+    font-family: 'Galada', cursive;
     color: white;
-    overflow:hidden;
+    text-decoration: none;
+}
+.footer1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.columna1{
+    grid-column: 1;
+    text-align: center;
+    padding: 40px;
     /* border: 1px solid black; */
 }
-.pies{
-    grid-column:2 / span 3;
-    /* background:url(../file_img/what_meme.gif);
-    background-size: cover; */
+.columna2{
+    grid-column: 2;
     text-align: center;
-    position: relative;
-
+    padding: 40px;
+    
+    /* border: 1px solid black; */
 }
-.pies-letras{
+.columna3{
+    grid-column: 3;
+    /* text-align: center; */
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid black; */
+}
+
+.footer2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.copyright{
+    grid-column: 1 ;
+    background: #031d3ff1;
+    padding: 20px;
+}
+.information{
+    grid-column: 2 ;
+    padding: 20px;
+    background: #031d3ff1;
+    /* background: #420452f1; */
     text-align: center;
-    position: relative;
-    top: 30px;
-    right: 50px ;
+}
+.redes{
+    width: 15%;
+    height: 10%;
+}
+.contacto{
+    width: 10%;
+    height: 10%;
+}
+.icon-facebook{
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    animation: facebook 5s infinite;
+}
+/* @keyframes facebook{
+    50% {color: #3B5999;} 
+
+} */
+.icon-facebook:hover{
+    color: #3b5999;
+}
+.facebook:hover{
+    color: #3b5999;
+}
+.icon-instagram{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: instagram 5s infinite;
+}
+@keyframes instagram {
+    /* 50% {color: #833ab4;} */ 
+    /* 0%   {color: #833ab4;}
+    25%  {color: #4c68d7;}
+    50%  {color: #cd486b;}
+    60%  {color: #cd486b;}
+    80%  {color: #fccc63;}
+    90%  {color: #bc2a8d;}
+    100% {color: #e95950;} */
+}
+.icon-instagram:hover{
+    color: #833ab4;
+    /* color:#8a3ab9 #4c68d7; */
+    /* background: linear-gradient(to bottom right, #8a3ab9, #4c68d7,#cd486b, #fbad50,#fccc63,#bc2a8d,#e95950); */
+}
+.instagram:hover{
+    color: #833ab4;
+}
+.icon-twitter{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: twitter 5s infinite;
+   
+}
+/* @keyframes twitter{
+    50% {color:  #55ACEE;} 
+
+} */
+.icon-twitter:hover{
+    color: #55acee;
+}
+.twitter:hover{
+    color: #55acee;
+}
+
+.icon-blogger{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    animation: blogger 5s infinite;
+   
+}
+/* @keyframes blogger{
+    50% {color:  #ff5722;} 
+
+} */
+.icon-blogger:hover{
+    color: #ff5722;
+}
+.blogger:hover{
+    color: #ff5722;
+}
+.icon-location,.icon-phone,.icon-mail2,.icon-clock,.icon-printer{
+    font-size: 30px;
+    color: white;
+}
+.horario{
+    margin-left: 35px;
+}
+.icon-location:hover{
+    color: #5a422b;
+}
+.home:hover{
+    /* font-size: 30px; */
+    color: #5a422b;
+    text-decoration: underline ;
+}
+.titulo-footer{
     font-size: 35px;
-
 }
-.logo-footer{
-    grid-column:1 / span 1;
-    /* background:url(../file_img/john\ travolta.gif);
-    background-size: cover; */
+.titulo-footer3{
+    font-family: 'Galada', cursive;
 }
-.img_3 {
-    max-width: 100%;
-    height: auto;
+/*========================================================================================*/
+/*==imagen fondo==*/
+/*========================================================================================*/
+.imagen_fondo{
+    background-image: url("../file_img/imagenes_fondo/fondo_lading.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 /*========================================================================================*/
 /*====*/
 /*========================================================================================*/
@@ -137,9 +261,9 @@
     font-weight: bolder;
 }
 
-  /*========================================================================================*/
- /*==4k  = 2560px==*/
- /*========================================================================================*/
+/*========================================================================================*/
+/*==4k  = 2560px==*/
+/*========================================================================================*/
 /* @media(min-width:1400px) and (max-width:2560px) {
 
 
@@ -153,16 +277,58 @@
  /*========================================================================================*/
  /*==Laltop = 1024px==*/
  /*========================================================================================*/
-/* @media (max-width:1024px) {
+@media (max-width:1024px) {
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 13px;
+    }
 
-
-} */
+}
  /*========================================================================================*/
  /*==Tablet = 768px==*/
  /*========================================================================================*/
- /* @media (max-width:768px) {
-
-} */
+ @media (max-width:768px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 900px 50px;
+        background: #044352c2;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
+        color: white;
+        text-decoration: none;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .columna1{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        /* border: 1px solid black; */
+    }
+    .columna2{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;  
+        /* border: 1px solid black; */
+    }
+    .columna3{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+        /* border: 2px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 12px;
+    }
+}
  /*========================================================================================*/
  /*==Movil L = 425px==*/
  /*========================================================================================*/
@@ -177,7 +343,6 @@
         position: relative;
         left: -15px;
     }
-
 }
  /*========================================================================================*/
  /*==Movil M = 375px==*/

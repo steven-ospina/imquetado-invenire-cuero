@@ -8,7 +8,7 @@ function validar(){
     var CajaCon = document.getElementById("contrasena").value;
     var CajaReCon = document.getElementById("repecontrasena").value;
     if(CajaNsu.length == 0){
-        $('#mensan').text("El DOCUMENTO no puede quedar vacio");
+        $('#mensan').text("El NOMBRE no puede quedar vacio");
         document.getElementById('alertn').style.color = 'red'; 
         return false;
     }
