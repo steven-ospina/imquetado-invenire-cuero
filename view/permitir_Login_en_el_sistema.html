@@ -5,50 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="file_css/style.css">
-    <link rel="stylesheet" type="text/css" href="file_css/style_lading_page.css">
+    <link rel="stylesheet" type="text/css" href="file_css/style_permitir_Login_en_el_sistema.css">
     <link rel="icon" type="image/png" href="file_img/caja-invenire-cuero-ico.ico" />
     <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Lading page</title>
+    <title>Permitir Login en el Sistema</title>
 </head>
 <body>
-<div class="imagen_fondo">
-    <header class="header">
-        <div class="logo">
-            <img class="img_1" src="file_img/caja-invenire-cuero.png"  width="100" height="67" alt="logo del proyecto" >
-        </div>
-            <!-- <nav class="menu"> -->
-                <a class="Quienes-somos a" href="index.html">Quienes somos</a>
-                <a class="Registro b" href="formulario.html">Registro</a>
-                <a class="Login c" href="login_usuario.html">Login</a> 
-            <!-- </nav> -->
-    </header>
-    <section class="section">
-        <div class="caja-Bienvenido">
-            <h1>Bienvenido</h1>
-            <p>En el centro de diseño y manufactura del cuero hacemos cada mes un gran bazar de productos terminados por los aprenidces</p>
-        </div>
-        <div class="caja-imagenes-movimiento">
-            <img class="imagenes"  name="slider" src="" alt="imagen en movimiento" width="990" height="100">
-        </div>
-    </section>
-    <section class="section-2">
-        <div >
-            <form action="" class="caja-email">
-                <p class="masinformacion">Si quieres saber mas ingresa tu nombre y tu correo y te llegara una notificacion cuando se realizara el procimo bazar</p>
-                <div class="caja-nombre">
-                        <input type="text" placeholder="Nombre">
+    <div class="formulario">
+        <h2>Permitir Ingreso Al Sistema </h2>
+            <form class="datos_formulario"  id="contact" action="#" method="POST" onsubmit="return validar()">
+                <input id="documento" placeholder="Documento del Usuario" type="text"  minlength="9" maxlength="11" required tabindex="1" />
+                <div id="alertd">
+                    <span id="mensad"></span>
                 </div>
-                <div class="caja-email2">
-                        <input class="ema" type="email" placeholder=" email">
-                </div>
-                <div class="caja-enviar">
-                <input type="submit" type="Enviar">
-                </div>
+                <input list="browsers2" placeholder="Estado" class="browsers2" tabindex="2">
+
+                <datalist id="browsers2">
+                  <option value="Activo">Activo</option>
+                  <option value="Inactivo" >Inactivo</option>
+                </datalist>
+                <p><input type="submit" value="Guardar" tabindex="4"></p>
             </form>
-        </div>
-    </section>
-    <footer class="footer">
+       </div>
+       <footer class="footer">
         <section class="footer1">
             <div class="columna1">
                  <div class="logo">
@@ -121,7 +101,5 @@
                 </div>
         </section>
     </footer>
-</div>
-<script type="text/javascript" src="file_js/slider.js"></script>
 </body>
 </html>

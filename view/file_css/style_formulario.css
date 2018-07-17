@@ -38,6 +38,7 @@ a{
     line-height: 2;
     letter-spacing: 2px;
     font-family: arial;
+    color: #ffffff;
 }
 
 /*========================================================================================*/
@@ -85,7 +86,16 @@ a{
         width: 100%;
     }
 } */
-
+.formulario input[type="submit"]{
+    background-color: #00a2ff;
+    border: none;
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #03399c;
+}
 /*========================================================================================*/
 /*==footer en esta parte podemos editar el footer==*/
 /*========================================================================================*/
