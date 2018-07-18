@@ -244,6 +244,306 @@ a{
 .titulo-footer3{
     font-family: 'Galada', cursive;
 }
+
 /*========================================================================================*/
-/*====*/
+/*==4k  = 2560px==*/
+/*========================================================================================*/
+/* @media(min-width:1400px) and (max-width:2560px) {
+
+
+} */
+ /*========================================================================================*/
+ /*==Laltop L = 1440px==*/
+ /*========================================================================================*/
+ /* @media (max-width:1440px) {
+
+}  */
+ /*========================================================================================*/
+ /*==Laltop = 1024px==*/
+ /*========================================================================================*/
+ @media (max-width:1024px) {
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 13px;
+    }
+
+}
+ /*========================================================================================*/
+ /*==Tablet = 768px==*/
+ /*========================================================================================*/
+ @media (max-width:768px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1090px 50px;
+        background: #044352c2;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
+        color: white;
+        text-decoration: none;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .columna1{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        /* border: 1px solid black; */
+    }
+    .columna2{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;  
+        /* border: 1px solid black; */
+    }
+    .columna3{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+        /* border: 2px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        font-size: 12px;
+    }
+}
+ /*========================================================================================*/
+ /*==Movil L = 425px==*/
+ /*========================================================================================*/
+ @media (max-width:425px) {
+    .formulario{
+        width: 90%;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1200px 150px;
+        background: #044352c2;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
+        color: white;
+        text-decoration: none;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .columna1{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        /* border: 1px solid black; */
+    }
+    .columna2{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;  
+        /* border: 1px solid black; */
+    }
+    .columna3{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+        /* border: 2px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 80px 80px;
+        font-size: 15px;
+
+    }
+    .copyright{
+        grid-column: 1;
+        text-align: center;
+    }
+    .information{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+}
+ /*========================================================================================*/
+ /*==Movil M = 375px==*/
+ /*========================================================================================*/
+ @media (max-width:375px) {
+    .formulario{
+        width: 90%;
+        height: 500px;
+        font-family: Verdana, sans-serif;
+    }
+
+    .formulario h2{
+        margin: 1px ;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 2px;
+        font-family: Verdana, sans-serif;
+    }
+    .formulario input{
+        width: 70%;
+        height: 30px;
+        font-size:15px;
+        letter-spacing: 2px;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="password"],
+    .formulario input[type="email"],
+    .formulario input[list="browsers"],
+    .formulario input[list="browsers2"]{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1300px 150px;
+        background: #044352c2;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
+        color: white;
+        text-decoration: none;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .columna1{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        /* border: 1px solid black; */
+    }
+    .columna2{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;  
+        /* border: 1px solid black; */
+    }
+    .columna3{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+        /* border: 2px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 80px 80px;
+        font-size: 15px;
+
+    }
+    .copyright{
+        grid-column: 1;
+        text-align: center;
+    }
+    .information{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+}
+
+ /*========================================================================================*/
+ /*==Movil S = 320px==*/
+ /*========================================================================================*/
+ @media (max-width:320px) {
+    .formulario{
+        width: 90%;
+        height: 500px;
+        font-family: Verdana, sans-serif;
+    }
+
+    .formulario h2{
+        margin: 1px ;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 1px;
+        font-family: Verdana, sans-serif;
+    }
+    .formulario input{
+        width: 75%;
+        height: 30px;
+        font-size:15px;
+        letter-spacing: 2px;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="password"],
+    .formulario input[type="email"],
+    .formulario input[list="browsers"],
+    .formulario input[list="browsers2"]{
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1350px 150px;
+        background: #044352c2;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
+        color: white;
+        text-decoration: none;
+    }
+    .footer1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .columna1{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        /* border: 1px solid black; */
+    }
+    .columna2{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;  
+        /* border: 1px solid black; */
+    }
+    .columna3{
+        grid-column: 1;
+        text-align: center;
+        padding: 40px;
+        font-family: 'Roboto', sans-serif;
+        /* border: 2px solid black; */
+    }
+    .footer2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 80px 80px;
+        font-size: 15px;
+
+    }
+    .copyright{
+        grid-column: 1;
+        text-align: center;
+    }
+    .information{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+}
+
+/*========================================================================================*/
+/*==GAME OVER *_* EL SOCIO ==*/
 /*========================================================================================*/
