@@ -34,11 +34,11 @@ a{
     margin: 1px ;
     font-size: 25px;
     font-weight: 400;
-    font-weight: bold;
-    line-height: 2;
-    letter-spacing: 2px;
-    font-family: arial;
-    color: #ffffff;
+    /* font-weight: bold; */
+    line-height: 4;
+    font-family: 'Roboto', sans-serif;
+    color: #2bebe1;
+
 }
 
 /*========================================================================================*/
@@ -48,7 +48,7 @@ a{
     max-width: 500px;
     width: 100%;
     height: 605px;
-    background-color: #3364ce3a;
+    background-color: #606266b4;
     margin: 48px auto;
     position: relative;
     border-radius: 5px;
@@ -56,7 +56,8 @@ a{
     margin-top: 1px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border: 2px solid black;
+    /* border: 2px solid black; */
+
 }
 
 
@@ -67,6 +68,7 @@ a{
     letter-spacing: 2px;
     font-family: arial;
 }
+
 /*--editor de medidas de cajones de los campos--*/
 .formulario input[type="text"],
 .formulario input[type="password"],
@@ -75,8 +77,9 @@ a{
 .formulario input[list="browsers2"]{
     margin: 0 0 20px 0;
     font-size: 20px;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
+    color: #056963;
 }
 /* @media (max-width:480px){
     form{
@@ -87,15 +90,22 @@ a{
     }
 } */
 .formulario input[type="submit"]{
-    background-color: #00a2ff;
+    background-color: #09827c;
     border: none;
     width: 50%;
     color: white;
     border-radius: 10px;
+
 }
+
 .formulario input[type="submit"]:hover{
-    background-color: #03399c;
+    background-color: #073836;
+    /* color: #2bebe1; */
 }
+.browsers, .browsers2{
+    font-weight: bolder;
+}
+
 /*========================================================================================*/
 /*==footer en esta parte podemos editar el footer==*/
 /*========================================================================================*/
@@ -263,12 +273,6 @@ a{
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-/*========================================================================================*/
-/*====*/
-/*========================================================================================*/
-.browsers, .browsers2{
-    font-weight: bolder;
 }
 
 /*========================================================================================*/

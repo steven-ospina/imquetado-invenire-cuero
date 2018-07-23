@@ -193,7 +193,7 @@ a{
     max-width: 400px;
     width: 100%;
     height: 405px;
-    background-color: #3364ce3a;
+    background-color: #606266b4;
     margin: 48px auto;
     position: relative;
     border-radius: 5px;
@@ -201,7 +201,7 @@ a{
     margin-top: 1px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 10px;
 }
 /*--editor de titulo del login--*/
@@ -212,7 +212,9 @@ a{
     font-weight: bold;
     line-height: 2;
     letter-spacing: 2px;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
+    color: #2bebe1;
+
 }
 
 .formulario_login input{
@@ -228,9 +230,23 @@ a{
     margin: 0 0 20px 0;
     font-size: 20px;
     border-radius: 5px;
+    color: #056963;
+}
+.formulario_login input[type="submit"]{
+    background-color: #09827c;
+    border: none;
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.formulario_login input[type="submit"]:hover{
+    background-color: #073836;
+    /* color: #2bebe1; */
 }
 .formulario_login .reset-password{
-    background: #2967a1b3;
+    background: #398885;
     width:100% ;
     padding: 15px 0;
     text-align: center;

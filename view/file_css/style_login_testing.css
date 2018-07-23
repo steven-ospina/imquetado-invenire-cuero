@@ -69,7 +69,7 @@ body{
     border: none;
     outline: none;
     height: 40px;
-    background: #b80f22;
+    background: #09827c;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -89,10 +89,10 @@ body{
 .login-box input[type="text"]:hover,
 .login-box input[type="password"]:hover{
     border: none;
-    border-bottom: 1px solid rgb(218, 25, 25);
+    border-bottom: 1px solid #056963;
     background: transparent;
     outline: none;
     /* height: 40px; */
-    color: rgb(226, 12, 12);
+    color: #056963;
     font-size: 25px;
 }
