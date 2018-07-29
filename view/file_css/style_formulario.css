@@ -9,6 +9,23 @@
     font-family: verdana;
     /*box-sizing: border-box;*//* esto asegura el relleno y el borde estan incluidos en el ancho de  y alto total de los elementos */
 }
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../file_css/fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../file_css/fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lobster_1.3regular';
+    src: url('../file_css/fonts/lobster/lobster_1.3-webfont.woff2') format('woff2'),
+         url('../file_css/fonts/lobster/lobster_1.3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 a{
     text-decoration: none;
     color: #ffffff;
@@ -36,7 +53,8 @@ a{
     font-weight: 400;
     /* font-weight: bold; */
     line-height: 4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'robotoregular';
+    /* font-family: 'Roboto', sans-serif; */
     color: #2bebe1;
 
 }
@@ -57,7 +75,6 @@ a{
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     /* border: 2px solid black; */
-
 }
 
 
@@ -66,7 +83,7 @@ a{
     height: 30px;
     font-size:18px;
     letter-spacing: 2px;
-    font-family: arial;
+    font-family: 'robotoregular';
 }
 
 /*--editor de medidas de cajones de los campos--*/
@@ -81,14 +98,6 @@ a{
     border: none;
     color: #056963;
 }
-/* @media (max-width:480px){
-    form{
-        width: 100%;
-    }
-    footer{
-        width: 100%;
-    }
-} */
 .formulario input[type="submit"]{
     background-color: #09827c;
     border: none;
@@ -115,9 +124,9 @@ a{
     grid-template-rows: 400px 50px;
     background: #044352c2;
     overflow: hidden;
-    font-family: 'Galada', cursive;
     color: white;
     text-decoration: none;
+    font-family: 'robotoregular';
 }
 .footer1{
     display: grid;
@@ -133,14 +142,12 @@ a{
     grid-column: 2;
     text-align: center;
     padding: 40px;
-    
     /* border: 1px solid black; */
 }
 .columna3{
     grid-column: 3;
     /* text-align: center; */
     padding: 40px;
-    font-family: 'Roboto', sans-serif;
     /* border: 2px solid black; */
 }
 
@@ -249,7 +256,8 @@ a{
     color: white;
 }
 .horario{
-    margin-left: 35px;
+    font-size: 15px;
+    margin-left: 10px;
 }
 .icon-location:hover{
     color: #5a422b;
@@ -261,9 +269,16 @@ a{
 }
 .titulo-footer{
     font-size: 35px;
+    font-family: 'lobster_1.3regular';
 }
 .titulo-footer3{
-    font-family: 'Galada', cursive;
+    font-family: 'lobster_1.3regular';
+}
+.row{
+    padding: 5px;
+}
+.row2{
+    padding: 10px;
 }
 /*========================================================================================*/
 /*==imagen fondo==*/

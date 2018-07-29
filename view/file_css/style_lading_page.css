@@ -10,14 +10,29 @@
     font-family: verdana; */
     /* font-family: 'Galada', cursive; */
     /* font-family: 'Roboto', sans-serif; */
-    /* color: white; */
-    /* color: black; */
     text-decoration: none;
 }
 a{
     text-decoration: none;
     color: #ffffff;
 }
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../file_css/fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../file_css/fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lobster_1.3regular';
+    src: url('../file_css/fonts/lobster/lobster_1.3-webfont.woff2') format('woff2'),
+         url('../file_css/fonts/lobster/lobster_1.3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*========================================================================================*/
 /*==header==*/
 /*========================================================================================*/
@@ -28,8 +43,10 @@ a{
     grid-template-rows: 75px;
     height: 70px;
     background: #1695b12d;
-    font-family: 'Galada', cursive;
+    /* font-family: 'Galada', cursive; */
     /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'robotoregular'; */
+    font-family: 'lobster_1.3regular';
 }
 .a{
     grid-column:3; 
@@ -63,7 +80,7 @@ a{
 /*========================================================================================*/
 /*==imagen de fondo==*/
 /*========================================================================================*/
-.imagen_fondo{
+body{
     /* display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: 100vh ; */
@@ -81,12 +98,13 @@ a{
 .section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 65vh ;
+    grid-template-rows: 60vh ;
     position: relative;
     z-index: 1;
     align-items: center;
     overflow: hidden;
-    font-family: 'Galada', cursive;
+    /* font-family: 'Galada', cursive; */
+    font-family: 'lobster_1.3regular';
 }
 .caja-Bienvenido{
     /* background: #5a39075e; */
@@ -104,11 +122,15 @@ a{
 }
 
 .section-2{
-    display: grid;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: #075a3a93;
+    font-family: 'lobster_1.3regular';
+    /* font-family: 'Galada', cursive; */
+    /* display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 170px ;
-    background: #075a3a27;
-    font-family: 'Galada', cursive;
+    grid-template-rows: 170px ; */
 }
 /*========================================================================================*/
 /*==editor  donde esta ubicado la caja del email==*/
@@ -125,34 +147,32 @@ a{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     /* grid-template-columns: 500px 300px 600px ; */
-    grid-template-rows: 90px 80px;
-    height: 170px;
-    /* margin: auto; */
-    background: #075a3a50;
-    /* margin-top: 10px; */
+    grid-template-rows: 90px 90px ;
+    /* height: 170px; */
     /* align-items: center; */
     overflow: hidden;
+    font-family: 'robotoregular';
 }
 .caja-nombre{
     grid-column: 1;
     grid-row: 2;
     padding: 5px;
-    margin-left: 200px;
-    font-family: 'Roboto', sans-serif;
+    margin-left: 100px;
+    /* font-family: 'Roboto', sans-serif; */
 }
 .caja-email2{
     grid-column: 2;
     grid-row: 2;
     padding: 5px;
     margin-left: 9px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 
 }
 .caja-enviar{
     grid-column: 3;
     grid-row: 2;
     padding: 5px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 
 }
 .masinformacion{
@@ -161,6 +181,7 @@ a{
     color: white;
     font-size: 29px;
     padding: 15px;
+    font-family: 'lobster_1.3regular';
     /* -webkit-text-fill-color: yellowgreen; */
     /* -webkit-text-stroke: 1px black; */
 }
@@ -195,7 +216,8 @@ a{
     color: white;
     text-decoration: none;
     overflow: hidden;
-    font-family: 'Galada', cursive;
+    /* font-family: 'lobster_1.3regular'; */
+    /* font-family: 'Galada', cursive; */
 }
 .footer1{
     display: grid;
@@ -205,25 +227,29 @@ a{
     grid-column: 1;
     text-align: center;
     padding: 40px;
+    font-family: 'robotoregular';
     /* border: 1px solid black; */
 }
 .columna2{
     grid-column: 2;
     text-align: center;
     padding: 40px;
+    font-family: 'robotoregular';
     /* border: 1px solid black; */
 }
 .columna3{
     grid-column: 3;
     /* text-align: center; */
     padding: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'robotoregular';
+    /* font-family: 'Roboto', sans-serif; */
     /* border: 2px solid black; */
 }
 
 .footer2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    font-family: 'robotoregular';
 }
 
 .copyright{
@@ -326,7 +352,7 @@ a{
     color: white;
 }
 .horario{
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .icon-location:hover{
     color: #5a422b;
@@ -338,9 +364,11 @@ a{
 }
 .titulo-footer{
     font-size: 35px;
+    font-family: 'lobster_1.3regular';
 }
 .titulo-footer3{
-    font-family: 'Galada', cursive;
+    font-family: 'lobster_1.3regular';
+    /* font-family: 'Galada', cursive; */
 }
 /*========================================================================================*/
 /*==estilo imagenes en movimiento==*/
@@ -365,9 +393,27 @@ a{
  /*========================================================================================*/
  /*==Laltop L = 1440px==*/
  /*========================================================================================*/
- /* @media (max-width:1440px) {
+ @media (max-width:1440px) {
 
-}  */
+    .section-2{
+        display: block;
+        height: 200px;
+        font-family: 'Galada', cursive;
+        /* background: #075a3a50; */
+    }
+
+    .caja-email{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 120px 120px;
+        /* height: 80px; */
+        /* background: #075a3a50; */
+        /* margin-top: 10px; */
+        /* align-items: center; */
+        overflow: hidden;
+    }
+
+} 
  /*========================================================================================*/
  /*==Laltop = 1024px==*/
  /*========================================================================================*/
@@ -376,6 +422,63 @@ a{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         font-size: 13px;
+    }
+
+    .section-2{
+        display: block;
+        height: 230px;
+        font-family: 'Galada', cursive;
+    }
+
+    .caja-email{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 130px 130px;
+        /* height: 80px; */
+        /* background: #075a3a50; */
+        /* margin-top: 10px; */
+        /* align-items: center; */
+        overflow: hidden;
+    }
+
+    .caja-nombre{
+        grid-column: 1;
+        grid-row: 2;
+        padding: 30px;
+        margin-left: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .caja-email2{
+        grid-column: 2;
+        grid-row: 2;
+        padding: 30px;
+        margin-left: 5px;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    .caja-enviar{
+        grid-column: 3;
+        grid-row: 2;
+        padding: 30px;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+    .caja-imagenes-movimiento{
+        padding: 30px;
+        /* background: #2e075a5e; */
+        /* border: 1px solid black; */
+    }
+
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 400px 50px;
+        background: #044352c2;
+        color: white;
+        text-decoration: none;
+        overflow: hidden;
+        font-family: 'Galada', cursive;
     }
 
 }
@@ -466,7 +569,7 @@ a{
     .section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 70vh ;
+        grid-template-rows: 60vh ;
         position: relative;
         z-index: 1;
         align-items: center;
@@ -489,12 +592,11 @@ a{
     }
     
     .section-2{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 170px ;
-        background: #075a3a27;
+        display: block;
+        height: 220px;
         font-family: 'Galada', cursive;
     }
+
 
     /*========================================================================================*/
     /*==section donde esta el email==*/
@@ -502,11 +604,10 @@ a{
     .caja-email{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        /* grid-template-columns: 500px 300px 600px ; */
-        grid-template-rows: 105px 100px;
+        grid-template-rows: 110px 100px;
         height: 170px;
         /* margin: auto; */
-        background: #075a3a50;
+        /* background: #075a3a50; */
         /* margin-top: 10px; */
         /* align-items: center; */
         overflow: hidden;
@@ -514,14 +615,14 @@ a{
     .caja-nombre{
         grid-column: 1;
         grid-row: 2;
-        padding: 5px;
-        margin-left: 90px;
+        padding: 22px;
+        margin-left: 9px;
         font-family: 'Roboto', sans-serif;
     }
     .caja-email2{
         grid-column: 2;
         grid-row: 2;
-        padding: 5px;
+        padding: 22px;
         margin-left: 9px;
         font-family: 'Roboto', sans-serif;
     
@@ -529,7 +630,7 @@ a{
     .caja-enviar{
         grid-column: 3;
         grid-row: 2;
-        padding: 5px;
+        padding: 22px;
         font-family: 'Roboto', sans-serif;
     
     }
@@ -537,8 +638,8 @@ a{
         grid-column: 1 / span 3;
         text-align: center;
         color: white;
-        font-size: 29px;
-        padding: 15px;
+        font-size: 27px;
+        padding: 14px;
         /* -webkit-text-fill-color: yellowgreen; */
         /* -webkit-text-stroke: 1px black; */
     }
@@ -597,19 +698,21 @@ a{
     .columna1{
         grid-column: 1;
         text-align: center;
-        padding: 40px;
+        padding: 1px;
         /* border: 1px solid black; */
     }
     .columna2{
         grid-column: 1;
-        text-align: center;
-        padding: 40px;  
+        /* text-align: center; */
+        padding: 1px;  
+        overflow: hidden;
+
         /* border: 1px solid black; */
     }
     .columna3{
         grid-column: 1;
-        text-align: center;
-        padding: 40px;
+        /* text-align: center; */
+        padding: 4px;
         font-family: 'Roboto', sans-serif;
         /* border: 2px solid black; */
     }
@@ -622,12 +725,15 @@ a{
     }
     .copyright{
         grid-column: 1;
-        text-align: center;
+        /* text-align: center; */
+        /* margin-right: 10px; */
+        padding: 20px;
     }
     .information{
         grid-column: 1;
         grid-row: 2;
-        text-align: center;
+        /* padding: 1px;         */
+        /* text-align: center; */
     }
 
     /*========================================================================================*/
@@ -691,7 +797,7 @@ a{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: 60vh 60vh;
         position: relative;
-        z-index: 1;
+        /* z-index: 1; */
         align-items: center;
         overflow: hidden;
         font-family: 'Galada', cursive;
@@ -716,13 +822,12 @@ a{
     }
     
     .section-2{
-        /* display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 2fr 2fr; */
         display: block;
-        background: #075a3a27;
+        width: 100%;
+        height: 600px;
         font-family: 'Galada', cursive;
     }
+
 
     /*========================================================================================*/
     /*==section donde esta el email==*/
@@ -732,8 +837,8 @@ a{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         /* grid-template-columns: 500px 300px 600px ; */
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        height: 600px;
+        grid-template-rows: repeat(4,100%);
+        /* height: 600px; */
         /* margin: auto; */
         background: #075a3a50;
         /* margin-top: 10px; */
@@ -819,7 +924,7 @@ a{
  @media (max-width:375px) {
     .footer{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,100%);
         grid-template-rows: 1300px 150px;
         background: #044352c2;
         overflow: hidden;
@@ -875,7 +980,7 @@ a{
     .header{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4,100%);
         /* height: 100px; */
         background: #1695b12d;
         font-family: 'Galada', cursive;
@@ -1051,6 +1156,9 @@ a{
         /* border: 10px solid  #64070785; */
     }
     
+    /* .imagen_fondo{
+        width: 110%;
+    } */
 
 }
 
@@ -1076,19 +1184,25 @@ a{
     }
     .columna1{
         grid-column: 1;
-        text-align: center;
+        text-align: left;
         padding: 40px;
+        overflow: hidden;
+
         /* border: 1px solid black; */
+    }
+    .img_2{
+        padding-left: 70px;
+        /* margin: auto; */
     }
     .columna2{
         grid-column: 1;
-        text-align: center;
+        text-align:left;
         padding: 40px;  
         /* border: 1px solid black; */
     }
     .columna3{
         grid-column: 1;
-        text-align: center;
+        text-align: left;
         padding: 40px;
         font-family: 'Roboto', sans-serif;
         /* border: 2px solid black; */
@@ -1102,13 +1216,23 @@ a{
     }
     .copyright{
         grid-column: 1;
-        text-align: center;
+        text-align: left;
+        padding-left: 40px;
     }
     .information{
         grid-column: 1;
         grid-row: 2;
-        text-align: center;
+        text-align: left;
+        font-size: 14px;
     }
+
+    /* .imagen_fondo{
+        width: 140%;
+        background-image: url("../file_img/imagenes_fondo/fondo_lading_4.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } */
 }
 
 /*========================================================================================*/
